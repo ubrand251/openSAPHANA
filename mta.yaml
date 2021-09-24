@@ -26,13 +26,13 @@ modules:
     type: html5
     path: web
     requires:
-      - name: openSAPHANA_00-uaa
+      - name: openSAPHANA-uaa
 resources:
   - name: openSAPHANA-db-hdi-container
     type: com.sap.xs.hdi-container
     properties:
       hdi-container-name: '${service-name}'
-  - name: openSAPHANA_00-uaa
+  - name: openSAPHANA-uaa
     type: com.sap.xs.uaa-space
     parameters:
-      path: ./xs-security.json
+      path: xs-security.json
